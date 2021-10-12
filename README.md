@@ -1,11 +1,10 @@
-# Hei_2020
-Functional Programming Hei 2020
+# Hei_2021
+Functional Programming Hei 2021
 
 Documentation : 
-https://www.scala-exercises.org/fp_in_scala/handling_error_without_exceptions
+
+https://docs.scala-lang.org/tour/tour-of-scala.html
+
+https://dokodoc.com/scala-par-l-exemple-martin-odersky.html
 
 https://www.handsonscala.com/hands-on-scala-programming-sample.pdf
-
-Streams : 
-https://alvinalexander.com/scala/how-to-use-stream-class-lazy-list-scala-cookb…
-https://www.tutorialspoint.com/scala_collections/scala_collections_stream.htm
