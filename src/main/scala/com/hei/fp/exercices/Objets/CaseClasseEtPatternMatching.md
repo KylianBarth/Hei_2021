@@ -1,4 +1,7 @@
 # Case Classes et Pattern Matching
+
+Tiré de Scala par l'exemple Martin Odersky
+
 Supposons que nous voulions écrire un interpréteur d’expressions arithmétiques. Pour commencer simplement, nous nous limiterons aux nombres et à l’opération d’addition. Ces expressions peuvent être représentées par une hiérarchie de classes dont la racine est la classe Expr, avec ses deux sous-classes Number et Sum. Une expression comme 1 + (3 + 7) peut alors être représentée par
           new Sum(new Number(1), new Sum(new Number(3), new Number(7)))
 Pour évaluer une expression comme celle-ci, il faut connaître sa forme (Sum ou Number) et accéder à ses composants. L’implémentation suivante fournit les méthodes nécessaires :

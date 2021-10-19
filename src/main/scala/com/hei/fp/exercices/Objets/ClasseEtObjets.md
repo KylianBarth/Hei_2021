@@ -1,4 +1,6 @@
 
+Tiré de Scala par l'exemple Martin Odersky
+
 Scala n'a pas de type prédéfini pour représenter les nombres rationnels, mais il est relativement simple d'en définir un à l'aide d'une classe. Voici une implémentation possible :
  
 ```scala
