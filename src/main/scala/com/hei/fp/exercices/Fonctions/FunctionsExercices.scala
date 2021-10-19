@@ -1,4 +1,6 @@
-package com.hei.fp.exercices
+package com.hei.fp.exercices.Fonctions
+
+// Tiré de Scala par l'exemple Martin Odersky
 
 // A comment!
 /* Another comment */
@@ -10,7 +12,7 @@ package com.hei.fp.exercices
 class FunctionsExercices {
 
   var x = 12 // variable mutable
-  val y = 14 // variable immutable - y sera évalué à l'execution, une fois pour toutes.
+  val y = 14 // valeur immutable - y sera évalué à l'execution, une fois pour toutes.
   def z = 14 // la partie droite sera évaluée lors de l'appel de z.
 
   // ---------------------------------------------- //
@@ -50,7 +52,7 @@ class FunctionsExercices {
    * @param y
    * @return
    */
-  def sumOfSquares (x: Double, y: Double) = ???
+  def sumOfSquaresOne (x: Double, y: Double) = x * x +y * y
 
 
   // ---------------------------------------------- //
@@ -64,7 +66,7 @@ class FunctionsExercices {
    * @param x
    * @return
    */
-  def abs(x: Double) = if (x < 0) -x else x
+  def abs(x: Double) = ???
 
   // ---------------------------------------------- //
   /*         Call by name - call by value           */
@@ -73,10 +75,10 @@ class FunctionsExercices {
   def loop : Int = loop
   //  loop: Int
   def first(x: Int, y: Int) = x
-  // ----- Call by name => first(1,loop) = execution infinie
+  // ----- Call by value => first(1,loop) = execution infinie
   // first: (x: Int, y: Int)Int
   def first(x: Int, y: => Int) = x
-  // ---- Call by value => first(1,loop)    res0: Int = 1
+  // ---- Call by name => first(1,loop)    res0: Int = 1
 
   // ---------------------------------------------- //
   /*               Anonymous function               */
@@ -122,7 +124,9 @@ class FunctionsExercices {
    * @param n
    * @return
    */
-  def factorielle(n : Int) : Int = ???
+  def factorielle(n : Int) : Int =
+    if (n == 1) 1
+    else n * factorielle(n-1)
 
   // ------------------------------------------------------ //
   /*            Fonctions imbriquées :                      */
@@ -230,7 +234,7 @@ class FunctionsExercices {
   // (x : Int) => x * x
   // (x : Int, y : Int) => x * y
 
-  // todo reformuler sumInts et sumSquares à l'iade fonction anonymes
+  // todo reformuler sumInts et sumSquares à l'aide fonction anonymes
   //def sumInts(a: Int, b: Int): Int = ???
   //def sumSquare(a: Int, b: Int): Int = ???
 
@@ -262,7 +266,7 @@ class FunctionsExercices {
   // ---------------------------------------------- //
 
   // todo écrire une version récursive terminale de la fonction sum
-  def sum(f: Int => Int)(a: Int, b: Int): Int = {
+  def sumTwo(f: Int => Int)(a: Int, b: Int): Int = {
     def iter(a: Int, result: Int): Int = {
       if (???) ???
       else iter(???, ???)
@@ -277,5 +281,7 @@ class FunctionsExercices {
   //  Ainsi, la différence entre la somme des carrés des dix premiers nombres naturels et le carré de la somme est
   //  3025 − 385 = 2640
   //  => Trouvez la différence entre la somme des carrés des cent premiers entier naturels et le carré de leur somme.
+
+
 
 }
