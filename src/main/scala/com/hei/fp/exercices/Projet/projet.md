@@ -26,6 +26,6 @@ Points d'attention :
  - application des concepts de fp : objects, fonctions
 
 
-Projet en équipe : 2 étudiants
-Livrable : projet sur repository (github / gitLab)
-Date : clone du repo le 29/01 à 18h.
+- Projet en équipe : 2 étudiants
+- Livrable : projet sur repository (github / gitLab)
+- Date : clone du repo le 29/10 à 18h.
