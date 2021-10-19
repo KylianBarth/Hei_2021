@@ -23,9 +23,10 @@ Points d'attention :
  - structuration du code : packages, architecture, configuration
  - gestion des erreurs
  - test unitaires
- - application des concepts de fp : objects, fonctions
+ - application des concepts de fp : objects, fonctions...
 
 
-- Projet en équipe : 2 étudiants
+Projet en équipe : 
+- 2 étudiants
 - Livrable : projet sur repository (github / gitLab)
 - Date : clone du repo le 29/10 à 18h.
